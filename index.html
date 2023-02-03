@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    
+    <main>
+        <section id="login">
+            <div id="imagem">
+                Foto
+            </div>
+            <div id="formulario">
+                <h1>login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="cadastro.php" autocomplete="on" method="post">
+                    <p>
+                        <label for="iemail">E-mail</label>
+                        <input type="email" name="email" id="iemail"  required maxlength="30" placeholder="Seu e-mail" size="20">
+                    </p>
+                    <p>
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" size="20" placeholder="Sua senha" pattern="^\(\d{2}\)\d{4}$">
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
