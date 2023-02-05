@@ -48,7 +48,7 @@ section#login > div#imagem{
 }
 
 section#login > div#formulario{
-    display: blocka;
+    display: block;
     padding: 10px;
     
 
@@ -64,7 +64,14 @@ div#formulario p{
 }
 
 input#enviar{
-    display: block; font-size: 1em; width: 100%; height: 40px; background-color: #49a09d; margin: auto; color: white; border: none; border-radius: 5px;"
+    display: block; 
+    font-size: 1em; 
+    width: 100%; 
+    height: 40px; 
+    background-color: #49a09d; 
+    color: white; 
+    border: none; 
+    border-radius: 5px;
 }
 
 input#enviar:hover{
@@ -95,12 +102,34 @@ input#enviar:hover{
 div.campo{
     background-color: #5f2c82;
     width: 100%;
+    border: 2px solid #5f2c82;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo > label{
     display: none;
 }
+
+div.campo > span{
+    color: white;
+    background-color: transparent;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo input{
+  background-color: #49a09d;
+  font-size: 1em;
+  width: calc(100% - 44px);
+  height: 100%;
+  transform: translateY(-12px);
+  border: 0px;
+  border-radius: 8px;
+  padding: 4px;
+
+}
+
